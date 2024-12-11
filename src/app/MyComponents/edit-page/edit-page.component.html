@@ -1,0 +1,14 @@
+<p>edit-page works!</p>
+
+
+<form  style="width: 25rem;" class="mx-auto" #editForm (ngSubmit)="editodo(editForm)">
+    <div class="mb-3" >
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" name="title" [value]="todoObj.title" id="title" ngModel>
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Description</label>
+      <input type="desc"  class="form-control" name="title" [value]="todoObj.desc" id="desc" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+  </form>

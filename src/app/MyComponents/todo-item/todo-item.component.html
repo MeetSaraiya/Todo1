@@ -1,0 +1,17 @@
+
+
+    <div class="mx-auto mb-4 " style="width:28rem;">
+        
+        <div class="card text-center " >
+            <div class="card-header">
+                {{todo.title}}
+            </div>
+            <div class="card-body">
+                
+                <p class="card-text">{{todo.desc}}</p>
+                <button href="#" class="btn btn-danger" (click)="onclick(todo)">{{todo.active == true ? "delete":"show"}}</button>
+            </div>
+            
+        </div>
+      </div>
+
